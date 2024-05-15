@@ -1,0 +1,167 @@
+html,
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+    cursor: url('cursor.png'), auto;
+}
+
+section {
+    margin: 0;
+    width: 100vw;
+}
+
+.nav {
+    z-index: 10;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100vw;
+    gap: 5%;
+    background-color: white;
+    z-index: 30;
+}
+
+.p2 {
+    margin-left: 65%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.p3,
+.p4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.active {
+    color: #ff3c04;
+    text-decoration: underline;
+}
+
+.p2:hover {
+    color: #ff3c04;
+}
+
+.p3:hover {
+    color: #ff3c04;
+}
+
+.p4:hover {
+    color: #ff3c04;
+}
+
+.Playground {
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    z-index: 20;
+}
+
+
+.container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+}
+
+.box {
+    background-color: white;
+    height: 8px;
+    padding: 20px;
+    border-bottom: 1px solid #ff3c04;
+    transition: height 0.5s, background-color 0.5s;
+    z-index: 10;
+}
+.box:nth-child(2) {
+    height: 30px; 
+}
+.box:hover {
+    height: 150px;
+    background-color: #ff3a045b;
+}
+
+.box:first-child {
+    border-top: 1px solid #ff3c04;
+}
+
+.parent {
+    padding-left: 8vw;
+    padding-top: 5vh;
+}
+
+.p5,
+.p6,
+.p7,
+.p8,
+.p9,
+.p10,
+.p11,
+.p12,
+.p13,
+.p14,
+.p15 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+.title1,
+.title2,
+.title3,
+.title4,
+.title5,
+.title6,
+.title7,
+.title8,
+.title9,
+.title10{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: -28px;
+}
+
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6,
+.content7,
+.content8,
+.content9,
+.content10{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 30px;
+    visibility: hidden;
+}
+
+.box:hover .content1,
+.box:hover .content2,
+.box:hover .content3,
+.box:hover .content4,
+.box:hover .content5,
+.box:hover .content6,
+.box:hover .content7,
+.box:hover .content8,
+.box:hover .content9,
+.box:hover .content10{
+    visibility: visible;
+}
+
